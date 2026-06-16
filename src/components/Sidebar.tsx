@@ -42,7 +42,6 @@ export function Sidebar() {
           Analizar texto
         </NavLink>
       </nav>
-
     </aside>
   )
 }
