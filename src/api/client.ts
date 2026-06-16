@@ -64,7 +64,7 @@ export const api = {
   // Stats
   getDaily: (fecha?: string) => {
     const q = fecha ? `?fecha=${fecha}` : ''
-    return request<import('../types/api').DailyStats>(`/api/stats/daily${q}`)
+    return request<import("../types/api").DailyStats>(`/api/stats/daily${q}`)
   },
   getWeekly: (fin?: string) => {
     const q = fin ? `?fin=${fin}` : ''
