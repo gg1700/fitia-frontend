@@ -61,7 +61,8 @@ export function Registrar() {
   const totalF = preview?.reduce((s, r) => s + r.fat_g, 0) ?? 0
 
   return (
-    <div className="animate-fade" style={{ maxWidth: 660 }}>
+    <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+    <div className="animate-fade" style={{ maxWidth: 660, width: '100%' }}>
       <div className="page-header">
         <div className="page-title">Registrar comida</div>
         <div className="page-subtitle">Describe lo que comiste en lenguaje natural</div>
@@ -229,6 +230,7 @@ export function Registrar() {
           </button>
         </div>
       )}
+    </div>
     </div>
   )
 }
