@@ -43,15 +43,6 @@ export function Sidebar() {
         </NavLink>
       </nav>
 
-      <div style={{ padding: '16px 24px', borderTop: '1px solid var(--border)' }}>
-        <div style={{ fontSize: 11, color: 'var(--text-muted)', lineHeight: 1.6 }}>
-          <span style={{ fontFamily: 'var(--font-mono)', color: 'var(--green)' }}>●</span>
-          {' '}conectado a{' '}
-          <span style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)', fontSize: 10 }}>
-            {import.meta.env.VITE_API_URL?.replace('https://', '') || 'localhost:8080'}
-          </span>
-        </div>
-      </div>
     </aside>
   )
 }
