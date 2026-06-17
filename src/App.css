@@ -805,9 +805,15 @@
    Responsive — ≤ 768px
    ===================================================== */
 @media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    width: 100%;
+  }
+
   /* Show topbar */
   .mobile-topbar {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 12px 16px;
