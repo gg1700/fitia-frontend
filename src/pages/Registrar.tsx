@@ -197,7 +197,7 @@ export function Registrar() {
       {/* Metadata */}
       {text.trim() && (
         <div className="card animate-fade" style={{ marginBottom: 20 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+          <div className="registrar-meta-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
             <div className="input-group">
               <label className="input-label">Fecha y hora</label>
               <input
