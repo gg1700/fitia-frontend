@@ -30,7 +30,7 @@ export function Sidebar() {
           Historial
         </NavLink>
 
-        <span className="nav-section-label" style={{ marginTop: 8 }}>Catálogo</span>
+        {/*<span className="nav-section-label" style={{ marginTop: 8 }}>Catálogo</span>
 
         <NavLink to="/alimentos" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
           <Apple size={16} />
@@ -40,7 +40,7 @@ export function Sidebar() {
         <NavLink to="/analizar" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
           <Search size={16} />
           Analizar texto
-        </NavLink>
+        </NavLink>*/}
       </nav>
     </aside>
   )
