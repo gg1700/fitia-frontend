@@ -65,7 +65,7 @@ export function Registrar() {
     <div className="animate-fade" style={{ maxWidth: 660, width: '100%' }}>
       <div className="page-header">
         <div className="page-title">Registrar comida</div>
-        <div className="page-subtitle">Describe lo que comiste en resumen...</div>
+        <div className="page-subtitle">Describe lo que comiste en pocas palabras...</div>
       </div>
 
       {/* NLP Terminal */}
