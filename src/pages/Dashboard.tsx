@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { format, parseISO } from 'date-fns'
-import { es } from 'date-fns/locale'
-import { Plus, TrendingUp, Clock } from 'lucide-react'
-import { api } from '../api/client'
-import type { DailyStats, WeeklyStats } from '../types/api'
-import { MacroCard } from '../components/MacroCard'
-import { cacheGet, cacheSet } from '../utils/cache'
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { format, parseISO } from 'date-fns';
+import { es } from 'date-fns/locale';
+import { Plus, TrendingUp, Clock } from 'lucide-react';
+import { api } from '../api/client';
+import type { DailyStats, WeeklyStats } from '../types/api';
+import { MacroCard } from '../components/MacroCard';
+import { cacheGet, cacheSet } from '../utils/cache';
 
 const today = format(new Date(), 'yyyy-MM-dd')
 

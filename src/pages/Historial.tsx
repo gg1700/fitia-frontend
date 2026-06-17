@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { format, parseISO, subDays } from 'date-fns'
-import { es } from 'date-fns/locale'
-import { Calendar, Trash2, ChevronRight } from 'lucide-react'
-import { api } from '../api/client'
-import type { Meal } from '../types/api'
-import { useToast } from '../components/Toast'
-import { cacheGet, cacheSet, cacheInvalidate } from '../utils/cache'
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { format, parseISO, subDays } from 'date-fns';
+import { es } from 'date-fns/locale';
+import { Calendar, Trash2, ChevronRight } from 'lucide-react';
+import { api } from '../api/client';
+import type { Meal } from '../types/api';
+import { useToast } from '../contexts/Toast';
+import { cacheGet, cacheSet, cacheInvalidate } from '../utils/cache';
 
 export function Historial() {
   const [meals, setMeals] = useState<Meal[]>([])

@@ -1,7 +1,11 @@
-import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, Utensils, Apple, BarChart2, Search } from 'lucide-react'
+import { NavLink } from 'react-router-dom';
+import { LayoutDashboard, Utensils, BarChart2 } from 'lucide-react';
+import { useThemeContext } from '../contexts/ThemeContext';
 
 export function Sidebar() {
+  const { theme, toggleTheme } = useThemeContext()
+  const isDark = theme === 'dark'
+
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -29,19 +33,27 @@ export function Sidebar() {
           <BarChart2 size={16} />
           Historial
         </NavLink>
-
-        {/*<span className="nav-section-label" style={{ marginTop: 8 }}>Catálogo</span>
-
-        <NavLink to="/alimentos" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-          <Apple size={16} />
-          Alimentos
-        </NavLink>
-
-        <NavLink to="/analizar" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-          <Search size={16} />
-          Analizar texto
-        </NavLink>*/}
       </nav>
+
+      {/* Theme toggle at the bottom */}
+      <div className="sidebar-theme-toggle">
+        <span className="theme-label">{isDark ? 'Modo oscuro' : 'Modo claro'}</span>
+        <button
+          id="theme-toggle-btn"
+          className={`theme-switch ${isDark ? 'dark' : 'light'}`}
+          onClick={toggleTheme}
+          aria-label="Cambiar tema"
+          title={isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+        >
+          <span className="theme-switch-track">
+            <span className="theme-switch-icons">
+              <span className="theme-icon sun">☀️</span>
+              <span className="theme-icon moon">🌙</span>
+            </span>
+            <span className="theme-switch-thumb" />
+          </span>
+        </button>
+      </div>
     </aside>
   )
 }

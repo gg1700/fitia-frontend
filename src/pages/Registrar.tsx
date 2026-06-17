@@ -1,11 +1,11 @@
-import { useState, useRef } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { format } from 'date-fns'
-import { Send, Zap, ChevronRight } from 'lucide-react'
-import { api } from '../api/client'
-import type { AnalyzeResult } from '../types/api'
-import { useToast } from '../components/Toast'
-import { cacheInvalidate } from '../utils/cache'
+import { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { format } from 'date-fns';
+import { Send, Zap, ChevronRight } from 'lucide-react';
+import { api } from '../api/client';
+import type { AnalyzeResult } from '../types/api';
+import { useToast } from '../contexts/Toast';
+import { cacheInvalidate } from '../utils/cache';
 
 const EXAMPLES = [
   'dos huevos fritos y media palta',

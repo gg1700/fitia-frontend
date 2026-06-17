@@ -1,4 +1,4 @@
-import { useAnimatedNumber } from '../hooks/useAnimatedNumber'
+import { useAnimatedNumber } from '../hooks/useAnimatedNumber';
 
 interface MacroCardProps {
   label: string
