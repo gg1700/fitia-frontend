@@ -329,6 +329,17 @@
   color: var(--text-muted);
 }
 
+/* Historial Filters */
+.historial-filters {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.historial-filters .input-group {
+  flex: 1;
+}
+
 /* NLP Terminal Input */
 .nlp-terminal {
   background: var(--bg-base);
@@ -876,6 +887,7 @@
   .historial-filters {
     flex-direction: column;
     gap: 12px;
+    align-items: stretch;
   }
 
   /* Registrar metadata grid: 1 column */

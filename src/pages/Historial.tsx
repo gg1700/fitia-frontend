@@ -67,12 +67,12 @@ export function Historial() {
 
       {/* Filters */}
       <div className="card" style={{ marginBottom: 24 }}>
-        <div className="historial-filters" style={{ display: 'flex', gap: 16, alignItems: 'flex-end' }}>
-          <div className="input-group" style={{ flex: 1 }}>
+        <div className="historial-filters">
+          <div className="input-group">
             <label className="input-label">Desde</label>
             <input type="date" className="input" value={desde} onChange={e => setDesde(e.target.value)} />
           </div>
-          <div className="input-group" style={{ flex: 1 }}>
+          <div className="input-group">
             <label className="input-label">Hasta</label>
             <input type="date" className="input" value={hasta} onChange={e => setHasta(e.target.value)} />
           </div>
