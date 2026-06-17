@@ -23,7 +23,7 @@ export function Sidebar() {
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
         <div className="mobile-logo">
-          <div className="logo-mark" style={{ width: 28, height: 28, fontSize: 14 }}>f</div>
+          <div className="logo-mark" style={{ width: 36, height: 36, padding: 0, background: 'transparent' }}><img src={isDark ? "/dark.ico" : "/light.ico"} alt="NutrIA logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /></div>
           <span className="logo-text" style={{ fontSize: 17 }}>NutrIA</span>
         </div>
         {/* Spacer to balance the flex row */}
@@ -37,7 +37,7 @@ export function Sidebar() {
 
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`}>
         <div className="sidebar-logo">
-          <div className="logo-mark">f</div>
+          <div className="logo-mark" style={{ padding: 0, background: 'transparent' }}><img src={isDark ? "/dark.ico" : "/light.ico"} alt="NutrIA logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /></div>
           <div>
             <div className="logo-text">NutrIA</div>
           </div>

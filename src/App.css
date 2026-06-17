@@ -30,8 +30,8 @@
 }
 
 .logo-mark {
-  width: 36px;
-  height: 36px;
+  width: 52px;
+  height: 52px;
   background: linear-gradient(135deg, var(--green), var(--cyan));
   border-radius: 10px;
   display: flex;
@@ -233,11 +233,14 @@
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 10px 18px;
   border-radius: var(--radius-sm);
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all 0.15s ease;
 }
 
@@ -805,9 +808,14 @@
    Responsive — ≤ 768px
    ===================================================== */
 @media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
   /* Show topbar */
   .mobile-topbar {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 12px 16px;

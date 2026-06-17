@@ -40,7 +40,7 @@ export function Dashboard() {
 
   return (
     <div className="animate-fade">
-      <div className="page-header" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+      <div className="page-header" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px', flexWrap: 'wrap' }}>
         <div>
           <div className="page-title">
             Buenos días{' '}
