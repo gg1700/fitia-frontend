@@ -4,13 +4,13 @@ export type Theme = 'dark' | 'light'
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
-    const stored = localStorage.getItem('fitia-theme') as Theme | null
+    const stored = localStorage.getItem('NutrIA-theme') as Theme | null
     return stored ?? 'dark'
   })
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('fitia-theme', theme)
+    localStorage.setItem('NutrIA-theme', theme)
   }, [theme])
 
   const toggleTheme = () => {

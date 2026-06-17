@@ -24,7 +24,7 @@ export function Sidebar() {
         </button>
         <div className="mobile-logo">
           <div className="logo-mark" style={{ width: 28, height: 28, fontSize: 14 }}>f</div>
-          <span className="logo-text" style={{ fontSize: 17 }}>fitia</span>
+          <span className="logo-text" style={{ fontSize: 17 }}>NutrIA</span>
         </div>
         {/* Spacer to balance the flex row */}
         <div style={{ width: 36 }} />
@@ -39,7 +39,7 @@ export function Sidebar() {
         <div className="sidebar-logo">
           <div className="logo-mark">f</div>
           <div>
-            <div className="logo-text">fitia</div>
+            <div className="logo-text">NutrIA</div>
           </div>
           <div className="logo-beta">beta</div>
         </div>
