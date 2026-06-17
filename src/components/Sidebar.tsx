@@ -41,7 +41,7 @@ export function Sidebar() {
           <div>
             <div className="logo-text">NutrIA</div>
           </div>
-          <div className="logo-beta">beta</div>
+          <div className="logo-beta">come bien</div>
         </div>
 
         <nav className="sidebar-nav">
