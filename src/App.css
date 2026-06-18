@@ -813,6 +813,25 @@
 }
 
 /* =====================================================
+   Tablet — 769px – 1024px (e.g. iPad in portrait)
+   Sidebar is visible (240px), leaving ~530–780px for content.
+   Two-column date inputs are too cramped at these widths.
+   ===================================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Historial filters: stack vertically */
+  .historial-filters {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  /* Registrar metadata grid: 1 column */
+  .registrar-meta-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =====================================================
    Responsive — ≤ 768px
    ===================================================== */
 @media (max-width: 768px) {
