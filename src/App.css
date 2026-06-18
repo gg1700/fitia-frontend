@@ -318,6 +318,7 @@
   font-size: 14px;
   transition: border-color 0.15s ease, background 0.35s ease, color 0.35s ease;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .input:focus {
@@ -327,6 +328,19 @@
 
 .input::placeholder {
   color: var(--text-muted);
+}
+
+/* iOS/Safari: strip native date-picker chrome so date/datetime
+   inputs inherit the same look as regular text inputs */
+.input[type="date"],
+.input[type="datetime-local"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
 }
 
 /* Historial Filters */
