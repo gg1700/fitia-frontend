@@ -196,6 +196,11 @@ input, textarea {
   justify-content: space-between;
   gap: 12px;
   transition: border-color 0.35s ease;
+  /* Always visible at the bottom of the sidebar without scrolling the page */
+  position: sticky;
+  bottom: 0;
+  background: var(--bg-surface);
+  z-index: 1;
 }
 
 .theme-label {
