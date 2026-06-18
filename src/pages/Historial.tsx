@@ -22,7 +22,7 @@ export function Historial() {
 
     setLoading(true)
     try {
-      const res = await api.getMeals({ desde, hasta, limite: 100 })
+      const res = await api.getMeals({ desde, hasta: `${hasta}T23:59:59`, limite: 100 })
       setMeals(res.meals)
       cacheSet(key, res.meals)
     } catch (e: unknown) {
@@ -81,7 +81,7 @@ export function Historial() {
 
       {loading && meals.length === 0 ? (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          {[0,1,2].map(i => (
+          {[0, 1, 2].map(i => (
             <div key={i} className="skeleton" style={{ height: 90, animationDelay: `${i * 0.1}s` }} />
           ))}
         </div>
