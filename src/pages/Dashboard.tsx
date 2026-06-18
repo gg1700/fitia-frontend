@@ -24,7 +24,7 @@ export function Dashboard() {
       setLoading(false)
     }
 
-    Promise.all([api.getDaily(), api.getWeekly()])
+    Promise.all([api.getDaily(today), api.getWeekly(today)])
       .then(([d, w]) => {
         setDaily(d)
         setWeekly(w)
